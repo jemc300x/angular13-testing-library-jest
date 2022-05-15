@@ -17,7 +17,7 @@ describe('SecondTestComponent', () => {
     });
     const nameControl = screen.getByTestId('name-gretting');
     await userEvent.type(nameControl, 'Enrique');
-    fireEvent.click(screen.getByText('Saluda'));
+    fireEvent.click(screen.getByText('Saludar'));
     expect(screen.getByTestId('gretting').textContent).toEqual('Hola, Enrique');
   });
 });
